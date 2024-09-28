@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcula troco</title>
+</head>
+<body>
+    <h1>calculando troco</h1>
+    <button onclick="start()">comprar produto</button>
+    <script>
+        function start() {
+            let item = window.prompt('qual produto você está comprando? ')
+            let preco = window.prompt('quanto esse produto custa?')
+            let pay = window.prompt('quanto você pagou nesse produto?')
+            let troco = parseFloat(pay) - parseFloat(preco)
+            window.alert(`você comprou ${item} custando R$${preco} e você pagou R$${pay}, então o troco é de R$${troco}`)
+        }
+    </script>
+</body>
+</html>

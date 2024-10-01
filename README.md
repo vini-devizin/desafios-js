@@ -6,4 +6,6 @@ Caso você não conheça, Curso em Video é um site e canal do YouTube que ensin
 
 [Canal do YouTube do Curso em Video](https://www.youtube.com/c/CursoemV%C3%ADdeo)
 
-[site do Curso em Video](https://www.cursoemvideo.com/)
+[Site do Curso em Video](https://www.cursoemvideo.com/)
+
+[Curso completo de JavaScript](https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)

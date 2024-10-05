@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo de desconto</title>
+</head>
+<body>
+    <h1>calcular desconto</h1>
+    <button onclick="start()">10% de desconto</button>
+    <p>clique no botão acima para iniciar</p>
+    <div id="a"></div>
+    <script>
+        function start() {
+            const res = document.getElementById('a');
+            let item = prompt('qual o produto?');
+            let preco = parseFloat(prompt(`quantos reais ${item} custa?`))
+            let desc = preco * 10 / 100
+            res.innerHTML = `<h2>calculando desconto de 10% para ${item}</h2><p>o preço original era de R$${preco}</p><p>adicionando um desconto de R$${desc.toFixed(2)}</p><p>no final o produto ${item} custara RS$${(preco - desc).toFixed(2)}</p>`
+        }
+    </script>
+</body>
+</html>

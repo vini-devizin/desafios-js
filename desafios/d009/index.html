@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reajustar salario</title>
+</head>
+<body>
+    <h1>reajuste salarial</h1>
+    <button onclick="start()">reajustar salario</button>
+    <p>clique no botão acima para iniciar</p>
+    <div></div>
+    <script>
+        function start() {
+            const res = document.getElementsByTagName('div')[0]
+            let nome = prompt('qual o nome do funcionario?')
+            let salA = parseFloat(prompt(`qual o salario atual de ${nome}?`))
+            let porc = parseInt(prompt('qual sera a porcetagem do aumento?'))
+            let salN = salA * porc / 100
+            res.innerHTML = `<h2>${nome} recebeu um aumento!</h2><p>o salario de ${nome} era de ${salA}</p><p>com im aumento de ${porc}%, teremos uma diferença de R$${salN.toFixed(2)}</p><p>com esse aumento, ${nome}, receberá R$${(salA + salN).toFixed(2)} por mês</p>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ano bissexto</title>
+</head>
+<body>
+    <h1>ano bissexto</h1>
+    <button onclick="verify()">verificar</button>
+    <p>informe um ano para verificar se ele é bissexto</p>
+    <div></div>
+    <script>
+        function verify() {
+            const res = document.getElementsByTagName('div')[0]
+            let year = parseInt(prompt('qual ano quer fazer a verificação?'))
+            if (year % 4 === 0 && year % 100 != 0 || year % 400 === 0) {
+                res.innerHTML = `<p>${year} é bissexto</p>`
+            } else {
+                res.innerHTML = `<p>${year} não é bissexto</p>`
+            }
+        }
+    </script>
+</body>
+</html>

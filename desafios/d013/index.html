@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>situação do aluno</title>
+</head>
+<body>
+    <h1>situação do aluno</h1>
+    <button onclick="verify()">verificar</button>
+    <div></div>
+    <script>
+        function verify() {
+            const res = document.getElementsByTagName('div')[0];
+            let nome = prompt('digite o nome do aluno');
+            let nota1 = parseFloat(prompt('digite a primeira nota'));
+            let nota2 = parseFloat(prompt('digite a segunda nota'));
+            let media = ((nota1 + nota2) / 2).toFixed(2);
+            if (media > 6) {
+                res.innerHTML = `<p>com essas notas a média é ${media}, ${nome} está aprovado</p>`
+            } else if (media > 3) {
+                res.innerHTML = `<p>com essas notas a média é ${media}, ${nome} está de recuperação</p>`
+            } else {
+                res.innerHTML = `<p>com essas notas a média é ${media}, ${nome} está reprovado</p>`
+            }
+        }
+    </script>
+</body>
+</html>
